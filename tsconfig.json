@@ -1,0 +1,37 @@
+{
+  "include": [
+    "src/**/*",
+    "src/**/*.vue",
+    "src/**/*.vue.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.m.js"
+  ],
+  "exclude": ["node_modules/*", ".vscode"],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "composite": true,
+    "baseUrl": ".",
+    "outDir": "./lib/",
+    "rootDir": "./src",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "isolatedModules": true,
+    "types": ["vite/client", "node"],
+    "lib": ["dom", "es2018"],
+    "target": "es2018",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  }
+}
